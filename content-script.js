@@ -2,11 +2,12 @@ function update(el){
   text = el.nodeValue;
 
   // replace 'Darmstadt' by 'Digitalstadt Darmstadt' if it's not preceded by 'Digitalstadt'
-  text = text.replace(/Digitalstadt Darmstadt|Darmstadt/gi, function(i){
+  text = text.replace(/Digitalstadt Darmstadt|chaosdarmstadt|Darmstadt/gi, function(i){
     return {
-      'Digitalstadt Darmstadt': 'Digitalstadt Darmstadt',
-      'Darmstadt': 'Digitalstadt Darmstadt'
-    }[i];
+      'digitalstadt darmstadt': 'Digitalstadt Darmstadt',
+      'darmstadt': 'Digitalstadt Darmstadt',
+      'chaosdarmstadt': 'chaosdigitalstadt'
+    }[i.toLowerCase()];
   });
 
   // some more replacements

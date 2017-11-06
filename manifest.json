@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Digitalstadt Darmstadt",
   "description": "Digitalize the web.",
-  "version": "1.1",
+  "version": "1.2",
   "icons": {
     "48": "icons/logo_48px.png",
     "96": "icons/logo_96px.png"
