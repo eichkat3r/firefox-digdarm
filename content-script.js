@@ -2,8 +2,9 @@ function update(el){
   text = el.nodeValue;
 
   // replace 'Darmstadt' by 'Digitalstadt Darmstadt' if it's not preceded by 'Digitalstadt'
-  text = text.replace(/Digitalstadt Darmstadt|chaosdarmstadt|Darmstadt/gi, function(i){
+  text = text.replace(/Wissenschaftsstadt Darmstadt|Digitalstadt Darmstadt|chaosdarmstadt|Darmstadt/gi, function(i){
     return {
+      'wissenschaftsstadt darmstadt': 'Digitalstadt Darmstart',
       'digitalstadt darmstadt': 'Digitalstadt Darmstadt',
       'darmstadt': 'Digitalstadt Darmstadt',
       'chaosdarmstadt': 'chaosdigitalstadt'
